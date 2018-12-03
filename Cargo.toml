@@ -1,0 +1,12 @@
+[package]
+name = "advent_of_code_2018"
+version = "0.1.0"
+authors = ["AGoetz Dev <agoetz.dev@gmail.com>"]
+
+[lib]
+bench = false
+
+[dependencies]
+aoc-runner = "0.2.0-alpha1"
+aoc-runner-derive = "0.2.0-alpha1"
+strsim = "0.8.0"
