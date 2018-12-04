@@ -1,5 +1,4 @@
 extern crate advent_of_code_2018;
-extern crate strsim;
 extern crate aoc_runner_derive;
 extern crate aoc_runner;
 

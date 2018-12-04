@@ -9,4 +9,4 @@ bench = false
 [dependencies]
 aoc-runner = "0.2.0-alpha1"
 aoc-runner-derive = "0.2.0-alpha1"
-strsim = "0.8.0"
+chrono = "0.4"
