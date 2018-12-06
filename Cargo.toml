@@ -10,3 +10,5 @@ bench = false
 aoc-runner = "0.2.0-alpha1"
 aoc-runner-derive = "0.2.0-alpha1"
 chrono = "0.4"
+regex = "1"
+lazy_static = "1.2.0"
