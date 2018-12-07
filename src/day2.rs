@@ -20,7 +20,7 @@ pub fn solve_part1(input: &[Vec<char>]) -> i32 {
                         let count = memory[(*c as u32 -97) as usize]+1;
                         memory[(*c as u32 -97) as usize] = count;
                 }
-                for (i, value) in memory.iter_mut().enumerate() {
+                for (_i, value) in memory.iter_mut().enumerate() {
                       if *value == 2 {
                               is_2=true;
                       }  

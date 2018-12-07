@@ -48,7 +48,7 @@ pub fn solve_part1(input: &[Point]) -> i32 {
     //calculate areas
     let mut dict_1 = calculate_areas(min_x, max_x, min_y, max_y, input);
     //calculate points that have infinite fields
-    let infinite_points = calculate_area_delta(min_x-1, max_x+1, min_y-1, max_y+1, input);
+    let infinite_points = calculate_infinite_points(min_x-1, max_x+1, min_y-1, max_y+1, input);
     //compare areas, find the maximum of points that aren't infinite
     let mut max_finite_area = std::i32::MIN;
     for p in input {
@@ -78,8 +78,9 @@ fn calculate_areas(min_x: i32, max_x:i32, min_y: i32, max_y: i32, points: &[Poin
 }
 
 //calculate which points expanded their area => infinite
-fn calculate_area_delta(min_x: i32, max_x:i32, min_y: i32, max_y: i32, points: &[Point]) -> HashSet<i32> {
+fn calculate_infinite_points(min_x: i32, max_x:i32, min_y: i32, max_y: i32, points: &[Point]) -> HashSet<i32> {
     let mut dict: HashSet<i32> = HashSet::new();
+    
     for x in min_x..max_x+1{
         //first row
         if let Some(i) = get_closest_point(points, x, min_y) {

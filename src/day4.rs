@@ -104,7 +104,7 @@ pub fn solve_part1(input: &[GuardEvent]) -> i32 {
                         },
                         GuardState::Awake => {
                                 let total_asleep = map_total.entry(current_id).or_insert(0);
-                                *total_asleep += (event.date.minute()  as i32 - current_minute  as i32);
+                                *total_asleep += event.date.minute()  as i32 - current_minute  as i32;
                                 let m_map = map_minutes.entry(current_id).or_insert(HashMap::new());
                                 for i in current_minute..(event.date.minute()) {
                                         let mut count = m_map.entry(i as i32).or_insert(0);
