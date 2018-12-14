@@ -1,7 +1,6 @@
 use std::{
     fmt::{self, Display},
     iter::FromIterator,
-    mem,
 };
 
 fn fmt_pot(pot: bool) -> char {
