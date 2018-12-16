@@ -225,7 +225,6 @@ pub fn  solve_part1(board: &Board) -> usize {
             println!("{}", output);
         }*/
     }
-    1
 }
 
 #[aoc(day13, part2)]
@@ -238,7 +237,7 @@ pub fn  solve_part2(board: &Board) -> usize {
     }
     
     loop {
-        if(carts.len() == 1){
+        if carts.len() == 1{
             println!("{},{}", carts[0].x, carts[0].y);
            return 1;
         }
@@ -267,5 +266,4 @@ pub fn  solve_part2(board: &Board) -> usize {
         }
         carts.retain(|cart| *cart_lookup.entry(cart.id).or_insert(false));
     }
-    0
 }

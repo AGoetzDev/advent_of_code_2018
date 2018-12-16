@@ -58,13 +58,13 @@ fn generate_tree(vals: &[u32], current_pos: usize) -> (Node, usize) {
     let mut tree_pos = current_pos+2;
     
     
-    for i in 0..children_size {
+    for _i in 0..children_size {
         
         let (n, p) = generate_tree(vals, tree_pos);
         nodes.push(n);
         tree_pos = p;
     }
-    for i in 0..metadata_size {
+    for _i in 0..metadata_size {
         metadata.push(vals[tree_pos]);
         tree_pos +=1;
     }
@@ -79,7 +79,7 @@ fn generate_tree(vals: &[u32], current_pos: usize) -> (Node, usize) {
 #[aoc_generator(day8)]
 pub fn input_generator(input: &str) -> Node {
     let split: Vec<u32> = input.split_whitespace().map(|c| c.parse::<u32>().unwrap_or(0)).collect();
-    let (root, pos) = generate_tree(&split, 0);
+    let (root, _pos) = generate_tree(&split, 0);
     
     root
         

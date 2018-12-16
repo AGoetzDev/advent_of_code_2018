@@ -4,8 +4,7 @@ extern crate regex;
 
 
 #[macro_use]
-extern crate aoc_runner_derive;
-#[macro_use] 
+extern crate aoc_runner_derive; 
 extern crate lazy_static;
 
 pub mod day1;
@@ -22,5 +21,6 @@ pub mod day11;
 pub mod day12;
 pub mod day13;
 pub mod day14;
+pub mod day15;
 
 aoc_lib!{ year = 2018 }

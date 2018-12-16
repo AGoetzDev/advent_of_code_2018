@@ -23,7 +23,7 @@ pub fn solve_part1(input: &[(char, char)]) -> String {
     }
     let mut seen: HashSet<char> = HashSet::new();
     
-    for i in 0..map.len() {
+    for _i in 0..map.len() {
         let candidate = find_candidates(&seen, &map)[0];
         result.push(candidate);
         seen.insert(candidate);
