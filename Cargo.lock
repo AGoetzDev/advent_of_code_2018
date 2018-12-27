@@ -2,8 +2,8 @@
 name = "advent_of_code_2018"
 version = "0.1.0"
 dependencies = [
- "aoc-runner 0.2.0-alpha1 (registry+https://github.com/rust-lang/crates.io-index)",
- "aoc-runner-derive 0.2.0-alpha1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "aoc-runner 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "aoc-runner-derive 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "chrono 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "lazy_static 1.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "regex 1.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -19,12 +19,12 @@ dependencies = [
 
 [[package]]
 name = "aoc-runner"
-version = "0.2.0-alpha1"
+version = "0.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "aoc-runner-derive"
-version = "0.2.0-alpha1"
+version = "0.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "aoc-runner-internal 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -236,8 +236,8 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [metadata]
 "checksum aho-corasick 0.6.9 (registry+https://github.com/rust-lang/crates.io-index)" = "1e9a933f4e58658d7b12defcf96dc5c720f20832deebe3e0a19efd3b6aaeeb9e"
-"checksum aoc-runner 0.2.0-alpha1 (registry+https://github.com/rust-lang/crates.io-index)" = "949c5f28f0cce7b01f0e0cd1e891ce303c1f750793f4e2537f1bcd93c69e6ec7"
-"checksum aoc-runner-derive 0.2.0-alpha1 (registry+https://github.com/rust-lang/crates.io-index)" = "e48a72d6b0f3170c45768f55256edac527206a84bbd7b11ea61181c6ebf6624a"
+"checksum aoc-runner 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)" = "e34a27977323a869e1c2c1d795dd25611caafeec0d121f57bb0b7630a639cd30"
+"checksum aoc-runner-derive 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)" = "696802dfe4dd87aa979f63a9e46ae98a31b5eb3d7aff5071de426e9bb3d1cfd2"
 "checksum aoc-runner-internal 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "274b0ba7f3669a45ec0aaacf94eb032a749de880ab776091576cca94037c9982"
 "checksum cfg-if 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)" = "082bb9b28e00d3c9d39cc03e64ce4cea0f1bb9b3fde493f0cbc008472d22bdf4"
 "checksum chrono 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)" = "45912881121cb26fad7c38c17ba7daa18764771836b34fab7d3fbd93ed633878"

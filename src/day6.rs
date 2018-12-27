@@ -12,7 +12,7 @@ pub struct Point {
 pub fn input_generator(input: &str) -> Vec<Point> {
     let mut result: Vec<Point> = Vec::new();
     for (i, l) in input.lines().enumerate() {
-        let mut split = l.split(", ").collect::<Vec<&str>>();
+        let split = l.split(", ").collect::<Vec<&str>>();
         result.push(Point {
             id: i as i32,
             x: split[0].parse::<i32>().unwrap(),

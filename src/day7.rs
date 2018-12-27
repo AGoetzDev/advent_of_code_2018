@@ -18,7 +18,7 @@ pub fn solve_part1(input: &[(char, char)]) -> String {
     let mut result: String = String::new();
     for (a, b) in input {
         map.entry(*a).or_insert(HashSet::new());
-        let mut deps = map.entry(*b).or_insert(HashSet::new());
+        let deps = map.entry(*b).or_insert(HashSet::new());
         deps.insert(*a);
     }
     let mut seen: HashSet<char> = HashSet::new();

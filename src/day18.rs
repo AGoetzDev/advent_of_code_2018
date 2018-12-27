@@ -32,9 +32,9 @@ impl AcreContent {
 pub fn input_generator(input: &str) -> Board {
     let mut fields: Vec<Vec<AcreContent>> = Vec::new();
 
-    for (y, l) in input.lines().enumerate() {
+    for (_y, l) in input.lines().enumerate() {
         let mut fields_row: Vec<AcreContent> = Vec::new();
-        for (x, c) in l.chars().enumerate() {
+        for (_x, c) in l.chars().enumerate() {
             match c {
                 '#' => fields_row.push(AcreContent::Lumberyard),
                 '.' => fields_row.push(AcreContent::Ground),
@@ -225,8 +225,8 @@ pub fn solve_part1(board: &Board) -> i32 {
 
     let mut num_tree = 0;
     let mut num_ly = 0;
-    for (y, row) in current_board.iter().enumerate() {
-        for (x, acre) in current_board[y].iter().enumerate() {
+    for (y, _row) in current_board.iter().enumerate() {
+        for (_x, acre) in current_board[y].iter().enumerate() {
             if *acre == AcreContent::Tree {
                 num_tree += 1;
             }
@@ -266,8 +266,8 @@ pub fn solve_part2(board: &Board) -> i32 {
         
     }
 
-    for (y, row) in current_board.iter().enumerate() {
-        for (x, acre) in current_board[y].iter().enumerate() {
+    for (y, _row) in current_board.iter().enumerate() {
+        for (_x, acre) in current_board[y].iter().enumerate() {
             if *acre == AcreContent::Tree {
                  num_tree += 1;
             }
